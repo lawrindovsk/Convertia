@@ -1,0 +1,24 @@
+.convertia{  
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    animation-duration: 3s;
+    animation: example linear 2s infinite alternate;
+}
+
+.convertia h1{
+    display: block;
+
+}
+
+
+
+@keyframes example {
+    0% {color: rgb(5, 155, 5); top: 0px; bottom: 25px;}
+   25% {color: rgb(23, 106, 173); top: 25px; bottom: 25px;}
+   50% {color: rgb(238, 8, 8); top: 50px; bottom: 50px;}
+   75% {color: rgb(255, 5, 222); top: 75px; bottom: 75px;}
+   100% {color:rgb(255, 72, 0); top: 100px; bottom: 100px;}
+}

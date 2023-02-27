@@ -1,0 +1,131 @@
+body{
+  background: linear-gradient(-45deg, #000000, #167235, #167264, #164d72, #8512e4, #e412d9a9, #270404);
+  color: rgb(255, 255, 255);
+  background-size: 1500% 1500%;
+  font-family: 'Inconsolata', monospace;
+  animation: gradient 70s ease infinite;
+}
+#corpo-body{
+  padding: 2%;
+}
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#navbarSupportedContent{
+  display: relative;
+}
+
+[id=divUrl]{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+}
+
+[id=tUrl]{
+    margin-left: -17.9%;
+    margin-right: -100%;
+    width: 100%;
+    height: 50%;
+    font-size: 22px;
+    text-shadow: 0.2px 0.3px 3px rgb(204, 202, 202);
+    margin-top: -23%;
+}
+
+[id=botaoConverter]{
+   margin-left: 74.7%;
+   margin-top:  -10%;
+   top: 10%
+}
+
+[id="downloadForm"]{
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  [id="inputMidia"]{
+    display: block;
+  }
+
+  #nav{
+      backdrop-filter: blur(15px) brightness(75%) saturate(70%);
+      display: grid;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      margin: 0%;
+      padding-right: 2%;
+      padding-left: 2%;
+  }
+
+  .tituloRainbow{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 237.52px;
+  }
+  
+  #tConvertia, #navegacao{
+    color: white;
+  }
+
+#aHome, #aGitHub{
+    color: white;
+    --text-color: var(--color-foreground);
+    counter-increment: musica-animation;
+    font-size: 3rem;
+    color: var(--text-color);
+    text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black), 4px 4px 0 rgba(0, 0, 0, 0.2);
+    animation: musica-animation 1.5s ease-in-out infinite;
+}
+
+.nav-item-home, .nav-item-github{
+    font-size: 23px;
+
+}
+
+[id="musica"]{
+  --text-color: var(--color-foreground);
+  counter-increment: musica-animation;
+  font-size: 3rem;
+  color: var(--text-color);
+  text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black), 4px 4px 0 rgba(0, 0, 0, 0.2);
+  animation: musica-animation 1.5s ease-in-out infinite;
+}
+
+@keyframes musica-animation {
+  0%, 100% {
+    transform: translatey(var(--axis-y 0.05));
+  }
+  50% {
+    transform: translatey(calc(var(--axis-y) * -0.05));
+  }
+}
+
+#bemvindo{
+   font-weight: bold;
+}
+
+#fundo{
+  background-color: rgba(64, 63, 63, 0.133);
+  backdrop-filter: blur(15px) brightness(70%) saturate(70%);
+  padding:2%;
+}
+
+#botaoDownload{
+  background-color: transparent;
+  border: none;
+  transition: all ease-in-out;
+}
+#botaoDownload:active {
+  transform: scale(0.8);
+}
